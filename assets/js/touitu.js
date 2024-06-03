@@ -8,7 +8,7 @@
       <h1><a class="fs-1 text-dark text-decoration-none p-2" href="index.html">Sports Picture</a></h1>
     </div>
     <nav>
-    <ul id="nav" class="sports-list d-flex list-unstyled pt-2">
+    <ul id="nav" class="sports-list d-flex list-unstyled pt-2 ms-5">
     <li class="pe-2"><a href="index.html" class="fs-3 text-dark text-decoration-none">top</a></li>
       <li class="pe-3"><a class="sub-text fs-3 text-dark text-decoration-none">baseball</a>
       <ul class="list-unstyled">
