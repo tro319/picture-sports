@@ -1,29 +1,35 @@
-const move = function() {
-    const target = document.getElementsByClassName("img");
 
-    const position = Math.floor(window.innerHeight * 1.40);
+jQuery(function($) {
 
-    for (let i = 0; i < target.length; i++) {
-        let offsetTop = Math.floor(target[i].getBoundingClientRect().top);
+    $(window).on('load scroll', function () {
+        var box = $('.fadeIn');
+        var box2 = $('.fadeIn2');
+        var animated = 'animated';
+    
+        box.each(function() {
+            var boxOffset = $(this).offset().top;
+            var scrollPos = $(window).scrollTop();
+    
+            var wh = $(window).height();
+    
+            if (scrollPos > boxOffset - wh + 500){
+                $(this).addClass(animated);
+            }
+    
+        })
 
-        if (offsetTop < position) {
-            target[i].classList.add("animate__animated", "animate__zoomInLeft", "img-after");
-        }
-    }
-}
+        box2.each(function() {
+            var boxOffset = $(this).offset().top;
+            var scrollPos = $(window).scrollTop();
+    
+            var wh = $(window).height();
+    
+            if (scrollPos > boxOffset - wh + 10){
+                $(this).addClass(animated);
+            }
+    
+        })
+    })
+  
+})
 
-const fadeUp = function() {
-    let target = document.getElementsByClassName("before-content");
-    let position = Math.floor(window.innerHeight * 1.30); 
-
-    for (let i = 0; i < target.length; i++) {
-        let offsetTop = Math.floor(target[i].getBoundingClientRect().top);
-
-        if (offsetTop < position) {
-            target[i].classList.add("after-content");
-        }
-    }
-}
-
-window.addEventListener("scroll", move, false);
-window.addEventListener("scroll", fadeUp, false);
