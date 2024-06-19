@@ -100,7 +100,8 @@ body {
 }
 
 .fadeIn2.animated {
-    op
+    opacity: 1;
+}
 
 
 /* footer 
