@@ -12,7 +12,7 @@ jQuery(function($) {
     
             var wh = $(window).height();
     
-            if (scrollPos > boxOffset - wh + 500){
+            if (scrollPos > boxOffset - wh + 250){
                 $(this).addClass(animated);
             }
     
