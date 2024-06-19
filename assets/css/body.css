@@ -67,7 +67,7 @@ body {
 }
 
 #main-bottom .img {
-    opacity: 0;
+    opacity: 1;
 }
 
 #main-bottom .img a img {
@@ -79,6 +79,10 @@ body {
 #main-bottom .img a:hover img {
     box-shadow: 7px 7px 15px #999;
     transition: 1s;
+}
+
+#main-bottom .img a:active img {
+    box-shadow: none;
 }
 
 
