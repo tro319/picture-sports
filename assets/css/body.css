@@ -62,9 +62,6 @@ body {
 /* scroll
 ========================================= */
 
-#main-bottom h2 {
-    margin-bottom: 175px;
-}
 
 #main-bottom .img {
     opacity: 1;
@@ -73,7 +70,6 @@ body {
 #main-bottom .img a img {
     box-shadow: 7px 7px 15px rgba(96, 151, 234, 1);
     transition: all 2s;
-    margin-bottom: 250px;
 }
 
 #main-bottom .img a:hover img {
